@@ -4,7 +4,7 @@ from fashion_mnist_master.utils import mnist_reader
 
 
 def main():
-    settings = Settings(n_estimators=50)
+    settings = Settings(n_estimators=10)
 
     gradient_boost_model = GradientBoostModel(settings)
 
