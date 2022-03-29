@@ -26,7 +26,7 @@ def plot_results(x_value, y1_value, y2_value=None, x_label="", y_axis_label="", 
     # ax.set(xlim=(0, 8), xticks=np.arange(1, 8), ylim=(0, 8), yticks=np.arange(1, 8))
 
     i = 0
-    while path.exists("plots/" + plot_name + str(i)):
+    while path.exists("plots/" + plot_name + str(i) + ".png"):
         i += 1
 
     plt.savefig("plots/" + plot_name + str(i))
