@@ -1,5 +1,5 @@
 class Settings:
-    default_n_estimators = 100
+    default_n_estimators = 50
     default_learning_rate = 0.1
     default_max_depth = 1
     default_random_state = 0

@@ -15,7 +15,7 @@ class GradientBoostModel:
     def evaluate(self, x_test, y_test):
         return classification_report(y_test, self.gradient_booster.predict(x_test))
 
-    def error_rate(self, x_test, y_test):
-        y_prediction = self.gradient_booster.predict(x_test)
-        error_rate = np.count_nonzero(y_test - y_prediction)/len(y_prediction)
+    def error_rate(self, x, y):
+        y_prediction = self.gradient_booster.predict(x)
+        error_rate = np.count_nonzero(y - y_prediction) / len(y_prediction)
         return error_rate
